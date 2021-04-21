@@ -1,9 +1,12 @@
-## pyavro-stardust
+## CAIDA-pyavro-stardust
 
-This package provides an interface for fast processing of the STARDUST avro
-data files using python.
+Source for parsing FT3 and FT4 data on CAIDA UCSD Network Telescope
 
-Data formats that are currently supported are:
+### References
+
+https://stardust-dev.caida.org/data/flowtuple/
+https://stardust-dev.caida.org/docs/data/flowtuple
+
  * flowtuple data
  * RSDOS attack data --- coming soon
 
@@ -18,3 +21,11 @@ or
 ```
 USE_CYTHON=1 pip install --user .
 ```
+
+### Examples 
+
+Use the examples in the example folder for counting the records in a flowtuple file
+
+### Analysis for IMC Paper
+
+The flowport.py file is used to parse the FT3 files at the network telescope and get information about attack sources targeting IoT Protocols. 
